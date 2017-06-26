@@ -45,6 +45,13 @@
 						</execution>
 					</executions>
 				</plugin>
+				     <plugin>
+         <groupId>org.apache.maven.plugins</groupId>
+         <artifactId>maven-deploy-plugin</artifactId>
+         <configuration>
+             <skip>true</skip>
+         </configuration>
+     </plugin>
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-app-maven-plugin</artifactId>
@@ -239,12 +246,15 @@
         </pluginRepository>
     </pluginRepositories>
 	
+
+
+	
 	<distributionManagement>
        <repository>
          <id>internal.repo</id>
          <name>Internal repo</name>
-         <url>file:///N:/Mulesoft/Work1/test1</url>
+         <url>https://github.com/nit2784/test1.git</url>
        </repository>
-   </distributionManagement>
+   </distributionManagement> 
 
 </project>
